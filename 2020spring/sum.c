@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <math.h>
 #define max_element 20
-int use[max_element];
-float value[max_element];
-int result[max_element];
+int use[max_element];//0表示当前未使用 对应序号的英雄 1则反之
+float value[max_element];//记录各个英雄的值
+int result[max_element];//当前最优解 0表示当前未使用 对应序号的英雄 1则反之
 float min;
 int target;
 void Check(int m){
